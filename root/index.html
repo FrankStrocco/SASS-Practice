@@ -3,9 +3,30 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SASS Practice</title>
-        <link rel="stylesheet" href="css/nesting1.css">
+        <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+        <link rel="stylesheet" href="css/nesting1.css" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
     <body>
-        This is body text.
+
+        <!-- div#container>header>form>input.search+span.wrap>input.button^^+article>h1{Main Headline}+p{lorem}+div.box*3 -->
+
+        <div id="container">
+            <header>
+                <form action="" class="searchField">
+                    <input type="text" class="search" placeholder="search..." required>
+                    <span class="wrap">
+                        <input type="button" class="button" value="go"><span class="fa fa-caret-left"></span>
+                    </span>
+                </form>
+                <article>
+                    <h1>Main Headline</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore blanditiis ullam qui quia voluptatum natus quibusdam, placeat earum quaerat! Quaerat debitis quibusdam, iure, nam dolorum totam iusto dolores nesciunt labore.</p>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </article>
+            </header>
+        </div>
     </body>
 </html>

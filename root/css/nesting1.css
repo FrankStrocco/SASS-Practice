@@ -1,4 +1,23 @@
-body {
-  background-color: red; }
+#container {
+  font-family: "Barlow", sans-serif;
+  max-width: 800px;
+  margin: 0 auto; }
+
+form.searchField {
+  float: right; }
+  form.searchField .search {
+    padding: 8px 15px;
+    background-color: rgba(50, 50, 50, 0.2);
+    border: 0px; }
+  form.searchField .button {
+    padding: 6px 15px;
+    border: 2px solid #207cca;
+    background-color: #207cca;
+    color: #fafafa; }
+
+article::before {
+  clear: both;
+  content: "";
+  display: block; }
 
 /*# sourceMappingURL=nesting1.css.map */
