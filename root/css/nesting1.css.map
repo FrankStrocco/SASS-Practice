@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAI;EACA,gBAAgB,EAAE,GAAG",
+"sources": ["../sass/nesting1.sass"],
+"names": [],
+"file": "nesting1.css"
+}
