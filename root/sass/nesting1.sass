@@ -1,3 +1,6 @@
+body
+    background-color: lightblue
+
 #container
     font-family: 'Barlow', sans-serif
     max-width: 800px
@@ -19,3 +22,27 @@ article::before
     clear: both
     content: ''
     display: block
+a
+    color: #207cca
+    text-decoration: none
+    &:hover
+        color: #dd720a
+h1
+    font-size: 2.8em
+    color: rgba(32,124,202,.6)
+    border-bottom: solid 1px rgba(32,124,202,.3)
+    .special &
+        color: #999
+.box
+    width: 80px
+    height: 80px
+    padding: 10px
+    margin: 0 1em
+    display: inline-block
+    color: #fafafa
+    &.one
+        background-color: rgba(32,124,202,1)
+    &.two
+        background-color: rgba(32,124,202,.6)
+    &.three
+        background-color: rgba(32,124,202,.3)

@@ -1,3 +1,6 @@
+body {
+  background-color: lightblue; }
+
 #container {
   font-family: "Barlow", sans-serif;
   max-width: 800px;
@@ -19,5 +22,32 @@ article::before {
   clear: both;
   content: "";
   display: block; }
+
+a {
+  color: #207cca;
+  text-decoration: none; }
+  a:hover {
+    color: #dd720a; }
+
+h1 {
+  font-size: 2.8em;
+  color: rgba(32, 124, 202, 0.6);
+  border-bottom: solid 1px rgba(32, 124, 202, 0.3); }
+  .special h1 {
+    color: #999; }
+
+.box {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  margin: 0 1em;
+  display: inline-block;
+  color: #fafafa; }
+  .box.one {
+    background-color: #207cca; }
+  .box.two {
+    background-color: rgba(32, 124, 202, 0.6); }
+  .box.three {
+    background-color: rgba(32, 124, 202, 0.3); }
 
 /*# sourceMappingURL=nesting1.css.map */
