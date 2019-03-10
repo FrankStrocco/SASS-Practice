@@ -12,11 +12,28 @@ form.searchField {
     padding: 8px 15px;
     background-color: rgba(50, 50, 50, 0.2);
     border: 0px; }
+    form.searchField .search:focus {
+      outline: 0; }
+    form.searchField .search::placeholder {
+      color: #207cca;
+      font-weight: bold; }
+  form.searchField .wrap {
+    position: relative;
+    display: inline-block;
+    left: -8px; }
+    form.searchField .wrap .fa-caret-left {
+      color: #207cca;
+      position: absolute;
+      right: 100%;
+      top: 20%; }
   form.searchField .button {
     padding: 6px 15px;
     border: 2px solid #207cca;
     background-color: #207cca;
     color: #fafafa; }
+    form.searchField .button:hover {
+      background-color: #fafafa;
+      color: #207cca; }
 
 article::before {
   clear: both;
@@ -35,6 +52,12 @@ h1 {
   border-bottom: solid 1px rgba(32, 124, 202, 0.3); }
   .special h1 {
     color: #999; }
+
+p {
+  font: 0.875em/1.4 Georgia, serif;
+    font-weight: bold;
+    font-style: italic;
+  margin: 0 0 0.5em 0; }
 
 .box {
   width: 80px;
