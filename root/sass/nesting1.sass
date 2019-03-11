@@ -3,7 +3,7 @@
 // variables
 $headlines: 'Barlow', sans-serif
 $bodyText: 'Lato', sans-serif
-$primaryColor: rgb(122,183,50)
+$primaryColor: rgb(32,124,202)
 $secondaryColor: rgb(150,150,150)
 $neutralColor: #fafafa
 $smallSpace: 5px
@@ -14,42 +14,49 @@ $baseFontSize: 15px
 $lineHeight: 1.4em
 
 body
-    background-color: lightblue
+    background-color: $neutralColor
 
 #container
     font-family: $bodyText
     max-width: 800px
     margin: 0 auto
 
-form.searchField
-    float: right
-    .search
-        padding: $smallSpace $largeSpace
-        background-color: rgba($secondaryColor,.2)
-        border: 0px
-        &:focus
-            outline: 0
-        &::placeholder
-            color: $primaryColor
-            font-weight: bold
-    .wrap
-        position: relative
-        display: inline-block
-        left: -8px
-        .fa-caret-left
-            color: $primaryColor
-            position: absolute
-            right: 100%
-            top: 20%
-
-    .button
-        padding: $smallSpace $largeSpace
-        border: 2px solid $primaryColor
-        background-color: $primaryColor
+header
+    background-color: $primaryColor
+    border-radius: $medSpace
+    padding: $smallSpace $medSpace
+    h1
         color: $neutralColor
-        &:hover
-            background-color: $neutralColor
-            color: $primaryColor
+
+// form.searchField
+//     float: right
+//     .search
+//         padding: $smallSpace $largeSpace
+//         background-color: rgba($secondaryColor,.2)
+//         border: 0px
+//         &:focus
+//             outline: 0
+//         &::placeholder
+//             color: $primaryColor
+//             font-weight: bold
+//     .wrap
+//         position: relative
+//         display: inline-block
+//         left: -8px
+//         .fa-caret-left
+//             color: $primaryColor
+//             position: absolute
+//             right: 100%
+//             top: 20%
+//
+//     .button
+//         padding: $smallSpace $largeSpace
+//         border: 2px solid $primaryColor
+//         background-color: $primaryColor
+//         color: $neutralColor
+//         &:hover
+//             background-color: $neutralColor
+//             color: $primaryColor
 
 article::before
     clear: both
@@ -65,6 +72,7 @@ h1
     font-size: 2.8em
     color: rgba($primaryColor,.6)
     border-bottom: solid 1px rgba(32,124,202,.3)
+    line-height: 1
     .special &
         color: $secondaryColor
 p
@@ -81,8 +89,26 @@ p
     display: inline-block
     color: $neutralColor
     &.one
-        background-color: rgba($primaryColor,1)
+        $primaryColor: #dd720a
+        background-color: rgba($primaryColor, .5)
+        a
+            color: $primaryColor
+        h3
+            color: $primaryColor
     &.two
+        $primaryColor: #e5ca19
         background-color: rgba($primaryColor,.6)
+        h3
+            color: $primaryColor
     &.three
         background-color: rgba($primaryColor,.3)
+    h3
+        background-color: rgba($neutralColor, .5)
+        margin: -$smallSpace (-$medSpace) $medSpace
+        padding: $smallSpace
+
+footer
+    text-align: center
+    color: $primaryColor
+    p
+        font-size: $medSpace

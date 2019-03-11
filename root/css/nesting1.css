@@ -1,39 +1,17 @@
 body {
-  background-color: lightblue; }
+  background-color: #fafafa; }
 
 #container {
   font-family: "Lato", sans-serif;
   max-width: 800px;
   margin: 0 auto; }
 
-form.searchField {
-  float: right; }
-  form.searchField .search {
-    padding: 5px 20px;
-    background-color: rgba(150, 150, 150, 0.2);
-    border: 0px; }
-    form.searchField .search:focus {
-      outline: 0; }
-    form.searchField .search::placeholder {
-      color: #7ab732;
-      font-weight: bold; }
-  form.searchField .wrap {
-    position: relative;
-    display: inline-block;
-    left: -8px; }
-    form.searchField .wrap .fa-caret-left {
-      color: #7ab732;
-      position: absolute;
-      right: 100%;
-      top: 20%; }
-  form.searchField .button {
-    padding: 5px 20px;
-    border: 2px solid #7ab732;
-    background-color: #7ab732;
+header {
+  background-color: #207cca;
+  border-radius: 10px;
+  padding: 5px 10px; }
+  header h1 {
     color: #fafafa; }
-    form.searchField .button:hover {
-      background-color: #fafafa;
-      color: #7ab732; }
 
 article::before {
   clear: both;
@@ -41,7 +19,7 @@ article::before {
   display: block; }
 
 a {
-  color: #7ab732;
+  color: #207cca;
   text-decoration: none; }
   a:hover {
     color: #dd720a; }
@@ -49,8 +27,9 @@ a {
 h1 {
   font-family: "Barlow", sans-serif;
   font-size: 2.8em;
-  color: rgba(122, 183, 50, 0.6);
-  border-bottom: solid 1px rgba(32, 124, 202, 0.3); }
+  color: rgba(32, 124, 202, 0.6);
+  border-bottom: solid 1px rgba(32, 124, 202, 0.3);
+  line-height: 1; }
   .special h1 {
     color: #969696; }
 
@@ -69,10 +48,26 @@ p {
   display: inline-block;
   color: #fafafa; }
   .box.one {
-    background-color: #7ab732; }
+    background-color: rgba(221, 114, 10, 0.5); }
+    .box.one a {
+      color: #dd720a; }
+    .box.one h3 {
+      color: #dd720a; }
   .box.two {
-    background-color: rgba(122, 183, 50, 0.6); }
+    background-color: rgba(229, 202, 25, 0.6); }
+    .box.two h3 {
+      color: #e5ca19; }
   .box.three {
-    background-color: rgba(122, 183, 50, 0.3); }
+    background-color: rgba(32, 124, 202, 0.3); }
+  .box h3 {
+    background-color: rgba(250, 250, 250, 0.5);
+    margin: -5px -10px 10px;
+    padding: 5px; }
+
+footer {
+  text-align: center;
+  color: #207cca; }
+  footer p {
+    font-size: 10px; }
 
 /*# sourceMappingURL=nesting1.css.map */
