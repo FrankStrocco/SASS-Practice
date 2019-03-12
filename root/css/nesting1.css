@@ -41,6 +41,8 @@ p {
   margin: 0 0 0.5em 0; }
 
 .box {
+  border-color: #e5ca19;
+  border-style: solid;
   width: 80px;
   height: 80px;
   padding: 10px;
@@ -56,7 +58,7 @@ p {
   .box.two {
     background-color: rgba(229, 202, 25, 0.6); }
     .box.two h3 {
-      color: #e5ca19; }
+      color: #207cca; }
   .box.three {
     background-color: rgba(32, 124, 202, 0.3); }
   .box h3 {

@@ -5,6 +5,7 @@ $headlines: 'Barlow', sans-serif
 $bodyText: 'Lato', sans-serif
 $primaryColor: rgb(32,124,202)
 $secondaryColor: rgb(150,150,150)
+$tertiaryColor: #e5ca19
 $neutralColor: #fafafa
 $smallSpace: 5px
 $medSpace: 10px
@@ -12,6 +13,11 @@ $largeSpace: 20px
 $boxSize: 80px
 $baseFontSize: 15px
 $lineHeight: 1.4em
+
+$bg: background
+$stroke: border
+
+
 
 body
     background-color: $neutralColor
@@ -27,36 +33,6 @@ header
     padding: $smallSpace $medSpace
     h1
         color: $neutralColor
-
-// form.searchField
-//     float: right
-//     .search
-//         padding: $smallSpace $largeSpace
-//         background-color: rgba($secondaryColor,.2)
-//         border: 0px
-//         &:focus
-//             outline: 0
-//         &::placeholder
-//             color: $primaryColor
-//             font-weight: bold
-//     .wrap
-//         position: relative
-//         display: inline-block
-//         left: -8px
-//         .fa-caret-left
-//             color: $primaryColor
-//             position: absolute
-//             right: 100%
-//             top: 20%
-//
-//     .button
-//         padding: $smallSpace $largeSpace
-//         border: 2px solid $primaryColor
-//         background-color: $primaryColor
-//         color: $neutralColor
-//         &:hover
-//             background-color: $neutralColor
-//             color: $primaryColor
 
 article::before
     clear: both
@@ -82,6 +58,8 @@ p
     line-height: $lineHeight
     margin: 0 0 .5em 0
 .box
+    #{$stroke}-color: $tertiaryColor
+    #{$stroke}-style: solid
     width: $boxSize
     height: $boxSize
     padding: $medSpace
@@ -90,14 +68,13 @@ p
     color: $neutralColor
     &.one
         $primaryColor: #dd720a
-        background-color: rgba($primaryColor, .5)
+        #{$bg}-color: rgba($primaryColor, .5)
         a
             color: $primaryColor
         h3
             color: $primaryColor
     &.two
-        $primaryColor: #e5ca19
-        background-color: rgba($primaryColor,.6)
+        background-color: rgba($tertiaryColor,.6)
         h3
             color: $primaryColor
     &.three
